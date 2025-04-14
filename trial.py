@@ -11,7 +11,7 @@ def extract_and_sum(pdf_file):
             text += page_text
 
     # Extract amounts
-    amounts = re.findall(r'£\s*-?\d{1,3}(?:,\d{3})*(?:\.\d{2})?', text.replace(" ", ""))
+    amounts = re.findall(r'£\s*-?\d[\d,]*(?:\.\d{2})?', text.replace(" ", ""))
 
     
     if not amounts:
