@@ -27,7 +27,7 @@ st.set_page_config(page_title="Transaction Total Calculator", page_icon="💷")
 st.title("💷 PDF Transaction Total Calculator")
 st.markdown("Drop your **PDF transaction report** below to instantly calculate the total amount.")
 
-uploaded_file = st.file_uploader("📎 Upload PDF", type="pdf", max_size=10*1024*1024)  # Limit to 10MB
+uploaded_file = st.file_uploader("📎 Upload PDF", type="pdf")
 
 if uploaded_file:
     try:
