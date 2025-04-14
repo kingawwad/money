@@ -25,7 +25,7 @@ def extract_and_sum(pdf_file):
     return total, cleaned
 
 st.set_page_config(page_title="Transaction Total Calculator", page_icon="💷")
-st.title("💷 PDF Transaction Total Calculator")
+st.title("💷 PDF Transaction Total Calculator v2")
 st.markdown("Drop your **PDF transaction report** below to instantly calculate the total amount.")
 
 uploaded_file = st.file_uploader("📎 Upload PDF", type="pdf")
